@@ -7,8 +7,6 @@ use Illuminate\Http\Request;
 class IndexController extends Controller
 {
     public function show(Request $request){
-
-       $value =   $request -> $name;
-
+        return view('index');
     }
 }

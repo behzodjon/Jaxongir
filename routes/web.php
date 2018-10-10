@@ -16,7 +16,7 @@ Route::get('/', function () {
     return view('index');
 });
 Route::group(['middleware' => 'web'], function(){
-    Route::match(['get', 'post'], '/', ['uses' => 'IndexController@execute', 'as' => 'home']);
+    Route::match(['get', 'post'], '/', ['uses' => 'IndexController@show', 'as' => 'home']);
     Route::get ('/about', ['uses' => 'AboutController@show']);
     Route::get ('/servises', ['uses' => 'ServisesController@show']);
     Route::get ('/news', ['uses' => 'NewsController@show']);
