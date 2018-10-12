@@ -22,3 +22,7 @@ Route::group(['middleware' => 'web'], function(){
     Route::get ('/news', ['uses' => 'NewsController@show']);
     Route::get('/contact', ['uses' => 'ContactController@show']);
 });
+Route::get('adminpanel', function () {
+    return view('master');
+});
+
