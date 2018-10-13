@@ -18,11 +18,8 @@ Route::get('/', function () {
 Route::group(['middleware' => 'web'], function(){
     Route::match(['get', 'post'], '/', ['uses' => 'IndexController@show', 'as' => 'home']);
     Route::get ('/about', ['uses' => 'AboutController@show']);
-    Route::get ('/servises', ['uses' => 'ServisesController@show']);
+    Route::get ('/services', ['uses' => 'ServicesController@show']);
     Route::get ('/news', ['uses' => 'NewsController@show']);
     Route::get('/contact', ['uses' => 'ContactController@show']);
-});
-Route::get('adminpanel', function () {
-    return view('master');
 });
 

@@ -80,13 +80,27 @@ class NewsController extends Controller
     protected function grid()
     {
         $grid = new Grid(new News);
+        $grid->filter(function($filter){
+            $filter->scope('new', 'Recently modified')
+                ->whereDate('created_at', date('Y-m-d'))
+                ->orWhere('updated_at', date('Y-m-d'));
+
+        });
 
         $grid->id('Id');
-        $grid->name('Name');
-        $grid->images('Images');
-        $grid->icon('Icon');
+        $grid->column('name')->display(function ($news){
+            return "<b style='color:red'>$news</b>";
+        });
+        $grid->column('images')->display(function ($url) {
+            return "<img width='100px' src='" . asset("uploads/" . $url) . "'>";
+        });
+        $grid->column('icon')->display(function ($news){
+            return "<i class='fa $news'></i>";
+        });
+
         $grid->created_at('Created at');
         $grid->updated_at('Updated at');
+$grid->column('article');
 
         return $grid;
     }
@@ -107,7 +121,9 @@ class NewsController extends Controller
         $show->icon('Icon');
         $show->created_at('Created at');
         $show->updated_at('Updated at');
-
+        $show->panel()
+            ->style('danger');
+        $show->avatar()->image();
         return $show;
     }
 
@@ -120,10 +136,17 @@ class NewsController extends Controller
     {
         $form = new Form(new News);
 
-        $form->text('name', 'Name');
+        $form->text('name', 'Name')->placeholder('Please enter name..');
         $form->image('images', 'Images');
-        $form->text('icon', 'Icon');
+        $form->icon('icon', 'Icon');
 
+
+        $form->ckeditor('article');
         return $form;
     }
+
+
+
+
+
 }
