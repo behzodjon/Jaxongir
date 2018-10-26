@@ -85,7 +85,9 @@ class PageController extends Controller
         $grid->name('Name');
         $grid->alias('Alias');
         $grid->text('Text');
-        $grid->images('Images');
+        $grid->column('images')->display(function ($url) {
+            return "<img width='100px' src='" . asset("uploads/" . $url) . "'>";
+        });
         $grid->created_at('Created at');
         $grid->updated_at('Updated at');
 
@@ -124,7 +126,7 @@ class PageController extends Controller
 
         $form->text('name', 'Name');
         $form->text('alias', 'Alias');
-        $form->textarea('text', 'Text');
+        $form->ckeditor('text', 'Text');
         $form->image('images', 'Images');
 
         return $form;

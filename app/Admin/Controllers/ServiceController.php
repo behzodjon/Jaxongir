@@ -84,7 +84,9 @@ class ServiceController extends Controller
         $grid->id('Id');
         $grid->name('Name');
         $grid->text('Text');
-        $grid->icon('Icon');
+        $grid->column('images')->display(function ($url) {
+            return "<img style='width:50px' src='" . asset("uploads/" . $url) . "'>";
+        });
         $grid->created_at('Created at');
         $grid->updated_at('Updated at');
 
@@ -104,7 +106,7 @@ class ServiceController extends Controller
         $show->id('Id');
         $show->name('Name');
         $show->text('Text');
-        $show->icon('Icon');
+        $show->image('Images');
         $show->created_at('Created at');
         $show->updated_at('Updated at');
 
@@ -122,7 +124,7 @@ class ServiceController extends Controller
 
         $form->text('name', 'Name');
         $form->textarea('text', 'Text');
-        $form->text('icon', 'Icon');
+        $form->image('images', 'Image');
 
         return $form;
     }

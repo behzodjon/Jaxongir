@@ -2,6 +2,9 @@
 
 namespace App\Providers;
 
+use App\Page;
+use App\User;
+use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -14,6 +17,12 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         //
+        //its just a dummy data object.
+//         menu will be here
+        $pages = Page::all();
+
+        // Sharing is caring
+        View::share('page', $pages);
     }
 
     /**

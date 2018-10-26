@@ -94,13 +94,11 @@ class NewsController extends Controller
         $grid->column('images')->display(function ($url) {
             return "<img width='100px' src='" . asset("uploads/" . $url) . "'>";
         });
-        $grid->column('icon')->display(function ($news){
-            return "<i class='fa $news'></i>";
-        });
-
+        $grid->column('text');
+        $grid->column('date');
         $grid->created_at('Created at');
         $grid->updated_at('Updated at');
-$grid->column('article');
+
 
         return $grid;
     }
@@ -118,7 +116,8 @@ $grid->column('article');
         $show->id('Id');
         $show->name('Name');
         $show->images('Images');
-        $show->icon('Icon');
+        $show->text('Text');
+        $show->text('Date');
         $show->created_at('Created at');
         $show->updated_at('Updated at');
         $show->panel()
@@ -138,10 +137,11 @@ $grid->column('article');
 
         $form->text('name', 'Name')->placeholder('Please enter name..');
         $form->image('images', 'Images');
-        $form->icon('icon', 'Icon');
+        $form->text('date', 'Date');
+        $form->ckeditor('text', 'Text');
 
 
-        $form->ckeditor('article');
+
         return $form;
     }
 
