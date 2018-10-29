@@ -26,7 +26,8 @@ Route::group(['middleware' => 'web'], function(){
     Route::get("/page/{id}", "IndexController@pageShow");
     Route::get('/dishes',['uses'=>'DishesController@show'])->name("dishes");
     Route::get('/hotels/{id}', 'MainController@hotelView')->name('hotel.view');
-
-
+    Route::get('/monuments',['uses'=>'MainController@show'])->name('monuments');
+    Route::get('/monuments/{id}','MainController@monumentView')->name('monument.view');
+    Route::get('/news/{id}','MainController@newsView')->name('news.view');
 });
 

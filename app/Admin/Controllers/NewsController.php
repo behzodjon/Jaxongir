@@ -138,7 +138,7 @@ class NewsController extends Controller
         $form->text('name', 'Name')->placeholder('Please enter name..');
         $form->image('images', 'Images');
         $form->text('date', 'Date');
-        $form->ckeditor('text', 'Text');
+        $form->textarea('text', 'Text');
 
 
 

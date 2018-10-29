@@ -126,7 +126,7 @@ class PageController extends Controller
 
         $form->text('name', 'Name');
         $form->text('alias', 'Alias');
-        $form->ckeditor('text', 'Text');
+        $form->textarea('text', 'Text');
         $form->image('images', 'Images');
 
         return $form;

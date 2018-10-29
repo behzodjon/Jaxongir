@@ -1,14 +1,12 @@
 @extends('layouts.site')
-@section('header')
-	@include('site.header')
-	@endsection
 
 @section('content')
 
 	<div class="home">
-		<div class="background_image1" style="background-image:url('{{asset("/uploads/images/winter-tour.jpg")}}')"></div>
-	</div>
+		<div class="background_image" style="background-image:url('{{asset("/uploads/images/travel-hiking-app.jpg")}}')"></div>
+		<div style="width: 100%; height: 100%; background-color: rgba(0,0,0,.6);"></div>
 
+	</div>
 	<!-- News -->
 
 	<div class="news">
@@ -28,14 +26,14 @@
 									<div>{!! $n->date !!}</div>
 
 								</div>
-								<div class="news_post_title"><a href="#">{!! $n->name !!}</a></div>
+								<div class="news_post_title"> <a href="{{route('news.view',['id'=>$n->id])}}">{!! $n->name !!}</a></div>
 								<div class="news_post_category">
 
 								</div>
 								<div class="news_post_text">
-									<p>{!! $n->text !!}</p>
+
 								</div>
-								<div class="news_post_link"><a href="#">Read More</a></div>
+								<div class="news_post_link"> <a href="{{route('news.view',['id'=>$n->id])}}">Read more...</a></div>
 							</div>
 						</div>
 					@endforeach

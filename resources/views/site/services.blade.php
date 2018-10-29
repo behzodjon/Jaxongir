@@ -1,15 +1,14 @@
 @extends('layouts.site')
-@section('header')
-    @include('site.header')
+@section('nav.services')
+    class="active"
 @endsection
 @section('content')
-    <style type="text/css">
 
-    </style>
-    <div>
+
         <div class="home">
-            <div class="background_image1"
+            <div class="background_image"
                  style="background-image:url('{{asset('/uploads/images/hyatt5.jpg')}}')"></div>
+
         </div>
 
 
@@ -19,7 +18,7 @@
                 <div class="row">
                     <div class="col text-center">
                         <div class="section_subtitle">simply amazing places</div>
-                        <div class="section_title"><h2>Luxury Hotels</h2></div>
+                        <div class="section_title"><h2>Luxury hotels</h2></div>
                     </div>
                 </div>
 
@@ -38,9 +37,8 @@
                                         </div>
                                     </div>
                                     <div class="card-body ">
-
-                                        <div class="card-title"><a
-                                                    href="{{route('hotel.view',['id'=>$h->id])}}">{!! $h->name !!}</a>
+                                        <div class="card-title">
+                                            <a href="{{route('hotel.view',['id'=>$h->id])}}">{!! $h->name !!}</a>
                                         </div>
                                         <div>{{$h->starsWidget()}}</div>
                                         <div>{!! $h->address !!}</div>
@@ -58,5 +56,5 @@
             </div>
 
         </div>
-    </div>
+        </div>
 @endsection
