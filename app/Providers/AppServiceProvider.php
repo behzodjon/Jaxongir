@@ -19,10 +19,8 @@ class AppServiceProvider extends ServiceProvider
         //
         //its just a dummy data object.
 //         menu will be here
-        $pages = Page::all();
 
         // Sharing is caring
-        View::share('page', $pages);
     }
 
     /**
@@ -32,6 +30,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        View::composer("*", function (){
+            $pages = Page::all();
+            View::share('page', $pages);
+        });
     }
 }
