@@ -9,7 +9,7 @@ class FoodControlller extends Controller
 {
     public function show(){
         $food=Food::all();
-        return view('site.food',compact('foood'));
+        return view('site.food',compact('food'));
     }
     public function pageShow($id){
 
