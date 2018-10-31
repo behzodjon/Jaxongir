@@ -22,7 +22,7 @@ Route::group(['middleware' => 'web'], function(){
     Route::get ('/services', ['uses' => 'ServicesController@show'])->name("services");
     Route::get ('/news', ['uses' => 'NewsController@show'])->name('news');
     Route::get('/contact', ['uses' => 'ContactController@show'])->name("contact");
-//    Route::get('/food',['uses'=>'FoodController@show'])->name("food");
+    Route::get('/food',['uses'=>'FoodController@show'])->name("food");
     Route::get("/page/{id}", "IndexController@pageShow");
     Route::get('/dishes',['uses'=>'DishesController@show'])->name("dishes");
     Route::get('/hotels/{id}', 'MainController@hotelView')->name('hotel.view');
