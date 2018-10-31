@@ -13,6 +13,6 @@ class FoodControlller extends Controller
     }
     public function pageShow($id){
 
-        $dishes=Food::findOrFail($id);
+        $food=Food::findOrFail($id);
     }
 }
