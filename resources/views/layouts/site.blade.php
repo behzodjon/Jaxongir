@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Travello template project">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image" content="{{ url("/uploads/images/dasturxon4.jpg")}} "/>
+    <meta property="og:url" content="{{url("/uploads/images/dasturxon4.jpg")}}"/>
+    <meta name="twitter:image" content="{{url("/uploads/images/dasturxon4.jpg")}}"/>
+    <meta name="twitter:url" content="{{url("/uploads/images/dasturxon4.jpg")}}"/>
     <link rel="stylesheet" type="text/css" href="/styles/bootstrap4/bootstrap.min.css">
     <link href="/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
@@ -62,8 +66,8 @@
         </div>
         <div class="header_social d-flex flex-row align-items-center justify-content-start">
             <ul class="d-flex flex-row align-items-start justify-content-start">
-                <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="https://t.me/Behzodjohn"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.facebook.com/Behzodjan"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                 <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                 <li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
                 <li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
@@ -151,7 +155,7 @@
                         <!-- Footer Contact Item -->
                         <div class="col-xl-4 footer_contact_col">
                             <div class="footer_contact_item d-flex flex-column align-items-center justify-content-start text-center">
-                                <div class="footer_contact_icon"><img src="images/trekking.svg" alt=""></div>
+                                <div class="footer_contact_icon"><img src="/images/trekking.svg" alt=""></div>
                                 <div class="footer_contact_title">come & drop by</div>
                                 <div class="footer_contact_list">
                                     <ul style="max-width:190px">
@@ -165,8 +169,8 @@
                         <div class="col-xl-4 footer_contact_col">
 
                             <div class="footer_contact_item d-flex flex-column align-items-center justify-content-start text-center">
-                                <div class="footer_contact_icon"><img src="images/around.svg" alt=""></div>
-                                <div class="footer_contact_title">send us a message</div>
+                                <div class="footer_contact_icon"><img src="/images/around.svg" alt=""></div>
+                                <div class="footer_contact_title">send us da message</div>
                                 <div class="footer_contact_list d-flex align-items-center">
 
                                     <a href="https://t.me/Behzodjohn"><i class="fa fa-paper-plane-o" style="font-size:32px;"></i></a>
