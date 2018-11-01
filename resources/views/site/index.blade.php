@@ -20,7 +20,7 @@
                                 <div class="row">
                                     <div class="col">
                                         <div class="home_slider_content ">
-                                            <div class="home_title"><h2 class="title">{!!  $page->text !!}</h2></div>
+                                            <div class="home_title"><h4 class="title">{!!  $page->text !!}</h4></div>
 
                                         </div>
 

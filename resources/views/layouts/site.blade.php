@@ -40,7 +40,7 @@
                 <div class="col">
                     <div class="header_content d-flex flex-row align-items-center justify-content-start">
                         <div class="header_content_inner d-flex flex-row align-items-end justify-content-start">
-                            <div class="logo"><a href="index.html">Uzbekistan</a></div>
+                            <div class="logo"><a href="/">Uzbekistan</a></div>
                             <nav class="main_nav">
                                 <ul class="d-flex flex-row align-items-start justify-content-start">
                                     <li @yield('nav.main') class="active"><a href="/">Home</a></li>

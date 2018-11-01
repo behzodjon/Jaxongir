@@ -18,7 +18,7 @@
             <div class="row">
                 <div class="col text-center">
                     <div class="section_subtitle">simply amazing places</div>
-                    <div class="section_title"><h2>Historical Monuments</h2></div>
+                    <div class="section_title"><h2>Historical Monumentss</h2></div>
                 </div>
             </div>
 

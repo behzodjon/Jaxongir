@@ -7,7 +7,7 @@
 
     <div class="home">
         <div class="background_image"
-             style="background-image:url('{{asset('/uploads/images/dasturxon4.jpg')}}')"></div>
+             style="background-image:url(uploads/images/dasturxon4.jpg);"></div>
         <div style="width: 100%; height: 100%; background-color: rgba(0,0,0,.4);"></div>
 
     </div>
