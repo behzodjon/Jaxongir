@@ -76,7 +76,7 @@
 
     <div class="menu">
         <div class="menu_header d-flex flex-row align-items-center justify-content-start">
-            <div class="menu_logo"><a href="/">Travello</a></div>
+            <div class="menu_logo"><a href="/">Uzbekistan</a></div>
             <div class="menu_close_container ml-auto"><div class="menu_close"><div></div><div></div></div></div>
         </div>
         <div class="menu_content">
