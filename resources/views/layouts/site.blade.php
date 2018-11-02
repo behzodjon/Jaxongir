@@ -6,10 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Travello template project">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:image" content="{{ url("/uploads/images/dasturxon4.jpg")}} "/>
-    <meta property="og:url" content="{{url("/uploads/images/dasturxon4.jpg")}}"/>
-    <meta name="twitter:image" content="{{url("/uploads/images/dasturxon4.jpg")}}"/>
-    <meta name="twitter:url" content="{{url("/uploads/images/dasturxon4.jpg")}}"/>
     <link rel="stylesheet" type="text/css" href="/styles/bootstrap4/bootstrap.min.css">
     <link href="/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
@@ -80,7 +76,7 @@
 
     <div class="menu">
         <div class="menu_header d-flex flex-row align-items-center justify-content-start">
-            <div class="menu_logo"><a href="index.html">Travello</a></div>
+            <div class="menu_logo"><a href="/">Travello</a></div>
             <div class="menu_close_container ml-auto"><div class="menu_close"><div></div><div></div></div></div>
         </div>
         <div class="menu_content">
@@ -96,8 +92,8 @@
         <div class="menu_social">
 
             <ul class="d-flex flex-row align-items-start justify-content-start">
-                <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="https://t.me/Behzodjohn"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.facebook.com/Behzodjan"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                 <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                 <li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
                 <li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
@@ -170,7 +166,7 @@
 
                             <div class="footer_contact_item d-flex flex-column align-items-center justify-content-start text-center">
                                 <div class="footer_contact_icon"><img src="/images/around.svg" alt=""></div>
-                                <div class="footer_contact_title">send us da message</div>
+                                <div class="footer_contact_title">send us a message</div>
                                 <div class="footer_contact_list d-flex align-items-center">
 
                                     <a href="https://t.me/Behzodjohn"><i class="fa fa-paper-plane-o" style="font-size:32px;"></i></a>
