@@ -1,5 +1,6 @@
 <?php
 
+use Encore\Admin\Controllers\UserController;
 use Illuminate\Routing\Router;
 
 Admin::registerAuthRoutes();
