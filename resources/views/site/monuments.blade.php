@@ -37,7 +37,7 @@
                                     </div>
                                 </div>
                                 <div class="card-body ">
-                                    <div class="card-title">
+                                    <div class="card-title p">
                                         <a href="{{route('monument.view',['id'=>$h->id])}}">{!! $h->name !!}</a>
                                     </div>
 

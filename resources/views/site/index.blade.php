@@ -175,7 +175,7 @@
                     <!-- News Post -->
 
                         <!-- News Post -->
-
+                        <h3 class="p"><a href="/dishes">See more..</a></h3>
 
                     </div>
                 </div>
